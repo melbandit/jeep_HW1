@@ -10,14 +10,14 @@ var onError = function(err) {
 };
 
 gulp.task('scss', function(){
-	return gulp.src('scss/**/*.scss')
+	return gulp.src('assets/scss/*.scss')
 	.pipe(plumber({errorHandler: onError}))
 	.pipe(sass())
 	.pipe(gulp.dest('css'));
 });
 
 gulp.task('watch', function(){
-	gulp.watch('scss/**/*.scss', ['scss']);
+	gulp.watch('assets/scss/*.scss', ['scss']);
 });
 
 gulp.task('default', ['scss']);
