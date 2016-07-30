@@ -1,12 +1,134 @@
+/* _________________________________________
+CONTENT:	Jeep_HW1
+AUTHOR:		Melissa I. Sattler
+____________________________________________
 
+TABLE OF CONTENTS:
+
+1. VARIABLES
+2. TYPOGRAPHY
+3. CONTENT
+
+========================================================== */
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box; 
+}
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}/*keep content on float element from going over eachother*/
+
+/* 1. VARIABLES  ========================================= */
+
+@import "variables";
 @import 'https://fonts.googleapis.com/css?family=Montserrat';
 
+
+/* 2. TYPOGRAPHY  ======================================== */
 
 body{
 	font-family: Arial, Helvetica, sans-serif;
 }
 header{
-	font-size: 16px;
-	color: #333;
 	font-family: 'Montserrat', sans-serif;
 }
+
+/*  CONTENT  =============================================== */
+header {
+	width:	100%;
+	height: 60px;
+	.headerBox{
+		height: 60px;
+		border-bottom: 1px solid #000000;
+		background-image: -moz-linear-gradient( 90deg, rgb(23,23,23) 0%, rgb(48,47,47) 100%);
+		background-image: -webkit-linear-gradient( 90deg, rgb(23,23,23) 0%, rgb(48,47,47) 100%);
+		background-image: -ms-linear-gradient( 90deg, rgb(23,23,23) 0%, rgb(48,47,47) 100%);
+		background-color: #000000;
+		nav{
+			text-transform: uppercase;
+			float:left;
+			position: absolute;
+			right: 0px;
+			top: 26px;
+			ul li{
+				float:left;
+				a{
+					border-left: 1px solid #595959;
+					/*padding: 23px 24px 24px 24px;*/
+					letter-spacing: -.04em;
+					font-weight: 400;
+					font-size: 18px;
+					color: #ffffff;
+
+				}
+			}
+
+		}
+		.home{
+			padding: 23px 26px 24px 25px;
+		}
+		.work{
+			padding: 23px 24px 24px 24px;
+			}
+		.aboutLink{
+			padding: 23px 24px 24px 24px;
+		}
+		.resources{
+			padding: 23px 22px 24px 22px;
+		}
+	}
+}
+h1{
+	text-transform: uppercase;
+	font-size: 36px;
+	color: white;
+  	font-weight: 700;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+	padding: 16px 33px;
+	span{
+		color:#c40000;
+	}	
+}
+
+nav ul li a:hover,
+nav ul li a.active,
+nav ul li a:focus{
+  background-color: #000000;
+}
+/*
+Recreate the Jeep page using Sass and Gulp and the BEM notation methodology. The project files and assets are available under Class Files.
+
+---------------------------------
+STEP ONE - GIT
+
+Create an account on GitHub. (Use the following tutorial if needed: http://try.github.io)
+
+---------------------------------
+STEP TWO - PROJECT
+
+DESIGN INFO
+The main brand font used for this site is Monserrat, available from Google Fonts. All body copy should be in an Arial/Helvetica/sans-serif stack.
+
+Here are the colors used for links and many other components.
+@colorBrand: 			#ffb302; // Gold
+@colorAccent: 			#ff9d01; // Darker gold
+
+
+HEADER
+The header is 60px tall. The background gradient is from #333 to #000. The Jeep logo is available in the header-sprite.png file. Active states have a 4px gold border at the top.
+
+FOOTER
+Gradient from #222 to #111. Border at the top is #444. Font size is 12px for links and disclaimers with headers that are white.
+
+OTHER NOTES
+Use mixins for all gradients and any other code you find yourself using more than twice.
+
+---------------------------------
+STEP THREE - SUBMIT TO GITHUB AND RINGMASTER
+Create a repository for this project on GITHUB. Add and commit your work to this repository. (Here's a cheat-sheet to help you along.
+http://www.git-tower.com/blog/git-cheat-sheet-detail/)
+
+Also upload your code to CircusLabs, and then submit both links here on RingMaster
+*/
