@@ -30,39 +30,37 @@ header {
   font-family: 'Montserrat', sans-serif; }
 
 /*  CONTENT  =============================================== */
-header {
+header.header {
   width: 100%;
-  height: 60px; }
-  header .headerBox {
-    height: 60px;
-    border-bottom: 1px solid #000000;
-    background-image: -moz-linear-gradient(90deg, #171717 0%, #302f2f 100%);
-    background-image: -webkit-linear-gradient(90deg, #171717 0%, #302f2f 100%);
-    background-image: -ms-linear-gradient(90deg, #171717 0%, #302f2f 100%);
-    background-color: #000000; }
-    header .headerBox nav {
-      text-transform: uppercase;
-      float: left;
-      position: absolute;
-      right: 0px;
-      top: 26px; }
-      header .headerBox nav ul li {
-        float: left; }
-        header .headerBox nav ul li a {
-          border-left: 1px solid #595959;
-          /*padding: 23px 24px 24px 24px;*/
-          letter-spacing: -.04em;
-          font-weight: 400;
-          font-size: 18px;
-          color: #ffffff; }
-    header .headerBox .home {
-      padding: 23px 26px 24px 25px; }
-    header .headerBox .work {
-      padding: 23px 24px 24px 24px; }
-    header .headerBox .aboutLink {
-      padding: 23px 24px 24px 24px; }
-    header .headerBox .resources {
-      padding: 23px 22px 24px 22px; }
+  height: 60px;
+  border-bottom: 1px solid #000000;
+  background-image: -moz-linear-gradient(90deg, #171717 0%, #302f2f 100%);
+  background-image: -webkit-linear-gradient(90deg, #171717 0%, #302f2f 100%);
+  background-image: -ms-linear-gradient(90deg, #171717 0%, #302f2f 100%);
+  background-color: #000000; }
+  header.header nav {
+    float: left;
+    position: absolute;
+    right: 0px;
+    top: 26px;
+    text-transform: uppercase; }
+    header.header nav ul li {
+      float: left; }
+      header.header nav ul li a {
+        border-left: 1px solid #595959;
+        /*padding: 23px 24px 24px 24px;*/
+        letter-spacing: -.04em;
+        font-weight: 400;
+        font-size: 18px;
+        color: #ffffff; }
+  header.header .home {
+    padding: 23px 26px 24px 25px; }
+  header.header .work {
+    padding: 23px 24px 24px 24px; }
+  header.header .aboutLink {
+    padding: 23px 24px 24px 24px; }
+  header.header .resources {
+    padding: 23px 22px 24px 22px; }
 
 h1 {
   text-transform: uppercase;
