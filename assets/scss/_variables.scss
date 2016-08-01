@@ -13,20 +13,30 @@ $darker-gold: #ff9d01;
 // $desktop-breakpoint: 1024px;
 // $desktopXL-breakpoint: 1400px;
 
-@mixin bp-tablet {
-  	@media only screen and ( min-width: $tablet-breakpoint){
-		@content;
-	}
-}
+// @mixin bp-tablet {
+//   	@media only screen and ( min-width: $tablet-breakpoint){
+// 		@content;
+// 	}
+// }
 
-@mixin bp-desktop {
-  	@media only screen and ( min-width: $desktop-breakpoint){
-		@content;
-	}
-}
+// @mixin bp-desktop {
+//   	@media only screen and ( min-width: $desktop-breakpoint){
+// 		@content;
+// 	}
+// }
 
-@mixin bp-xlDesktop {
-  	@media only screen and ( min-width: $desktopXL-breakpoint){
-		@content;
-	}
+// @mixin bp-xlDesktop {
+//   	@media only screen and ( min-width: $desktopXL-breakpoint){
+// 		@content;
+// 	}
+// }
+
+@mixin body__squares--font{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #555;
+	font-weight: bold;
+	opacity: 0.5;
 }
