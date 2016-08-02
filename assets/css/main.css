@@ -25,8 +25,7 @@ TABLE OF CONTENTS:
 /* 2. TYPOGRAPHY  ======================================== */
 body {
   background-color: #000;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden; }
+  font-family: Arial, Helvetica, sans-serif; }
 
 header {
   font-family: 'Montserrat', sans-serif; }
@@ -51,7 +50,7 @@ header {
     padding: 8px;
     margin-left: 150px; }
   .header .header__logo-banner {
-    float: left;
+    position: absolute;
     margin-left: 800px; }
   .header .header__nav {
     position: absolute;
@@ -69,40 +68,52 @@ header {
         padding: 16px 24px 21px 24px;
         font-weight: 400;
         text-decoration: none;
-        color: #ffffff; }
+        color: #444; }
+        .header .header__nav ul li .header__nav-home:hover, .header .header__nav ul li .header__nav-home:focus,
+        .header .header__nav ul li .header__nav-work:hover,
+        .header .header__nav ul li .header__nav-work:focus,
+        .header .header__nav ul li .header__nav-shoppingTools:hover,
+        .header .header__nav ul li .header__nav-shoppingTools:focus,
+        .header .header__nav ul li .header__nav-capability:hover,
+        .header .header__nav ul li .header__nav-capability:focus,
+        .header .header__nav ul li .header__nav-owners:hover,
+        .header .header__nav ul li .header__nav-owners:focus {
+          border-top: 4px inset #ffb302;
+          background-color: #000000;
+          color: white; }
 
-nav ul li a:hover,
-nav ul li a.active,
-nav ul li a:focus {
+.active {
   border-top: 4px inset #ffb302;
-  background-color: #000000; }
+  background-color: #000000;
+  color: white; }
 
-.body__featured-image .body__featured-image-bkg {
-  position: absolute;
-  background-image: url(../img/feature-1-bg.jpg);
+.body__featured-image {
+  position: relative;
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  left: 0;
-  z-index: -10; }
-
-.body__featured-image .body__featured-image-fg {
-  position: relative;
-  background-image: url(../img/feature-1-vehicles.jpg);
-  width: 100%;
-  height: 200px;
-  background-repeat: no-repeat;
-  transform-origin: 50% 50%;
-  top: 247px;
-  left: 60px;
-  z-index: -5; }
+  overflow: hidden; }
+  .body__featured-image .body__featured-image-bkg {
+    position: absolute;
+    background-image: url(../img/feature-1-bg.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    left: 0;
+    z-index: -10; }
+  .body__featured-image .body__featured-image-fg {
+    position: absolute;
+    background-image: url(../img/feature-1-vehicles.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50%;
+    top: 247px;
+    left: 60px;
+    z-index: -5; }
 
 .body__squares-container {
-  position: absolute;
-  top: 640px;
-  left: 50%;
-  width: 100%;
-  transform: translate(-50%, -50%); }
+  width: 1110px;
+  margin: 500px auto; }
   .body__squares-container .body__squares {
     float: left;
     background-clip: content-box;
@@ -136,6 +147,43 @@ nav ul li a:focus {
       color: #555;
       font-weight: bold;
       opacity: 0.5; }
+
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 482px;
+  top: 100%;
+  left: 0;
+  font-size: 12px;
+  color: #FFF;
+  border-top: 1px solid #444;
+  background-image: -moz-linear-gradient(90deg, #111 0%, #222 100%);
+  background-image: -webkit-linear-gradient(90deg, #111 0%, #222 100%);
+  background-image: -ms-linear-gradient(90deg, #111 0%, #222 100%); }
+  .footer .footer__links-container {
+    width: 1110px;
+    margin: 0 auto; }
+    .footer .footer__links-container .footer__links {
+      float: left;
+      width: 220px;
+      padding: 40px 0px 50px 10px;
+      height: auto; }
+      .footer .footer__links-container .footer__links .footer__links--header {
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 1.8em; }
+      .footer .footer__links-container .footer__links .footer__links--disclaimers {
+        display: block;
+        opacity: 0.5;
+        line-height: 1.8em; }
+
+.footer__copyright {
+  width: 1110px;
+  margin: 0 auto; }
+  .footer__copyright p {
+    display: block;
+    line-height: 2em;
+    padding: 0px 0 10px 10px; }
 
 /*
 Recreate the Jeep page using Sass and Gulp and the BEM notation methodology. The project files and assets are available under Class Files.
