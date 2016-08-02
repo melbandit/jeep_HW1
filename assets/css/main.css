@@ -34,16 +34,16 @@ header {
 .body--wrapper {
   position: relative;
   width: 1366px;
-  height: 1282px;
+  height: 1222px;
   margin: 0 auto; }
 
 .header {
   width: 100%;
   height: 60px;
   border-bottom: 1px solid #000000;
-  background-image: -moz-linear-gradient(90deg, black 0%, #333333 100%);
-  background-image: -webkit-linear-gradient(90deg, black 0%, #333333 100%);
-  background-image: -ms-linear-gradient(90deg, black 0%, #333333 100%);
+  background-image: -moz-linear-gradient(90deg, #000 0%, #333 100%);
+  background-image: -webkit-linear-gradient(90deg, #000 0%, #333 100%);
+  background-image: -ms-linear-gradient(90deg, #000 0%, #333 100%);
   background-color: #000000; }
   .header .header__logo {
     float: left;
@@ -81,11 +81,10 @@ header {
           border-top: 4px inset #ffb302;
           background-color: #000000;
           color: white; }
-
-.active {
-  border-top: 4px inset #ffb302;
-  background-color: #000000;
-  color: white; }
+      .header .header__nav ul li .active {
+        border-top: 4px inset #ffb302;
+        background-color: #000000;
+        color: white; }
 
 .body__featured-image {
   position: relative;
@@ -170,7 +169,7 @@ header {
       height: auto; }
       .footer .footer__links-container .footer__links .footer__links--header {
         text-transform: uppercase;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.8em; }
       .footer .footer__links-container .footer__links .footer__links--disclaimers {
         display: block;
@@ -178,12 +177,13 @@ header {
         line-height: 1.8em; }
 
 .footer__copyright {
-  width: 1110px;
+  width: 100%;
   margin: 0 auto; }
   .footer__copyright p {
     display: block;
-    line-height: 2em;
-    padding: 0px 0 10px 10px; }
+    line-height: 1.8em;
+    padding: 0px 0 5px 10px;
+    color: #555; }
 
 /*
 Recreate the Jeep page using Sass and Gulp and the BEM notation methodology. The project files and assets are available under Class Files.
