@@ -1,42 +1,4 @@
 $primary-gold: #ffb302;
 $darker-gold: #ff9d01;
-
-
-// $column-1-3: 1 / 3 * 100%;
-// $column-1-1: 100%;
-// $column-9-10: 9/10 * 100%;
-
-// $text-narrow: 95%;
-// $text-wide: 640px;
-
-// $tablet-breakpoint: 768px;
-// $desktop-breakpoint: 1024px;
-// $desktopXL-breakpoint: 1400px;
-
-// @mixin bp-tablet {
-//   	@media only screen and ( min-width: $tablet-breakpoint){
-// 		@content;
-// 	}
-// }
-
-// @mixin bp-desktop {
-//   	@media only screen and ( min-width: $desktop-breakpoint){
-// 		@content;
-// 	}
-// }
-
-// @mixin bp-xlDesktop {
-//   	@media only screen and ( min-width: $desktopXL-breakpoint){
-// 		@content;
-// 	}
-// }
-
-@mixin body__squares--font{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: #555;
-	font-weight: bold;
-	opacity: 0.5;
-}
+$main-font-color: #ffffff;
+$body-color: #000000;
