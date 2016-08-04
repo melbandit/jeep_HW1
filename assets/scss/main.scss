@@ -70,11 +70,7 @@ header{
 			float: left;
 			border-right: 2px solid $body-color;
 			padding: 22px 0 22px 0;
-			.header__nav-home,
-			.header__nav-work,
-			.header__nav-shoppingTools,
-			.header__nav-capability,
-			.header__nav-owners{
+			.header__nav-links {
 				padding: 16px 24px 21px 24px;
 				font-weight: 400;
 				text-decoration: none;
