@@ -1,0 +1,40 @@
+.footer{
+	position: absolute;
+	width: 100%;
+	height: 482px;
+	top: 100%;
+	left: 0;
+	font-size: 12px;
+	color: $main-font-color;
+	border-top: 1px solid #444; 
+	@include footer--gradient;
+	.footer__links-container{
+		@include container--width;
+		margin: 0 auto;
+		.footer__links{
+			float: left;
+			width: 220px;
+			padding: 40px 0px 50px 10px;
+			line-height: 1.8em;
+			height: auto;
+			.footer__links--header{
+				text-transform: uppercase;
+				font-weight: 700;
+			}
+			.footer__links--disclaimers{
+				display: block;
+				opacity: 0.5;	
+			}
+		}	
+	}
+}
+.footer__copyright{
+	width: 100%;
+	margin: 0 auto;
+	p{
+		display: block;
+		line-height: 1.8em;
+		padding: 0px 0 5px 10px;
+		color: #555;
+	}
+}

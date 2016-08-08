@@ -22,23 +22,22 @@ TABLE OF CONTENTS:
 
 /* 1. VARIABLES  ========================================= */
 
-@import "vendor/reset"; //always should go first
+@import "base/reset"; //always should go first
+@import "base/typography";
 
-@import "base/variables";
-@import "base/mixins";
+@import "components/navigation"
 
-@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import "helpers/mixins";
+@import "helpers/variables";
 
+@import "layout/footer";
+@import "layout/header";
+
+@import "pages/home";
+@import "pages/vehicles";
 
 /* 2. TYPOGRAPHY  ======================================== */
 
-body{
-	background-color: $body-color;
-	font-family: Arial, Helvetica, sans-serif;
-}
-header{
-	font-family: 'Montserrat', sans-serif;
-}
 
 /*  CONTENT  =============================================== */
 .body--wrapper{
@@ -123,7 +122,7 @@ header{
 		border: 1px solid $main-font-color;
 		text-align: center;
 	}
-	.body__squares--430x200{
+	.body__squares--large{
 		position: relative;
 		width: 430px;
 		height: 200px;
@@ -132,52 +131,12 @@ header{
 	    	font-size: 20px;
 		}
 	}
-	.body__squares--310x200{
+	.body__squares--medium{
 		position: relative;
 		width: 310px;
 		height: 200px;
 		p{
 			@include body__squares--font;
 		}
-	}
-}
-.footer{
-	position: absolute;
-	width: 100%;
-	height: 482px;
-	top: 100%;
-	left: 0;
-	font-size: 12px;
-	color: $main-font-color;
-	border-top: 1px solid #444; 
-	@include footer--gradient;
-	.footer__links-container{
-		@include container--width;
-		margin: 0 auto;
-		.footer__links{
-			float: left;
-			width: 220px;
-			padding: 40px 0px 50px 10px;
-			line-height: 1.8em;
-			height: auto;
-			.footer__links--header{
-				text-transform: uppercase;
-				font-weight: 700;
-			}
-			.footer__links--disclaimers{
-				display: block;
-				opacity: 0.5;	
-			}
-		}	
-	}
-}
-.footer__copyright{
-	width: 100%;
-	margin: 0 auto;
-	p{
-		display: block;
-		line-height: 1.8em;
-		padding: 0px 0 5px 10px;
-		color: #555;
 	}
 }

@@ -1,3 +1,7 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+
+
 @mixin header--gradient{
 	background-image: -moz-linear-gradient( 90deg, $body-color 0%, #333 100%);
 	background-image: -webkit-linear-gradient( 90deg, $body-color 0%, #333 100%);
