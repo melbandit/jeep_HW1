@@ -1,6 +1,4 @@
-@import "helpers/mixins";
 @import "helpers/variables";
-
 
 @mixin header--gradient{
 	background-image: -moz-linear-gradient( 90deg, $body-color 0%, #333 100%);
@@ -8,13 +6,15 @@
 	background-image: -ms-linear-gradient( 90deg, $body-color 0%, #333 100%);
 }
 
-@mixin header--active{
+@mixin nav--active{
+	padding: 16px 24px 21px 24px;
+	text-decoration: none;
 	border-top: 4px inset $primary-gold;
 	background-color: $body-color;
 	color: white;
 }
 
-@mixin body__squares--font{
+@mixin squares--font{
 	position: absolute;
 	top: 50%;
 	left: 50%;

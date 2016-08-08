@@ -1,0 +1,27 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+
+.nav{
+		position: absolute;
+		left: 280px;
+		top: 0px;
+		ul li{
+			float: left;
+			border-right: 1px solid $body-color;
+			border-left: 1px solid $body-color;
+			padding: 22px 0 22px 0;
+			.nav-item {
+				padding: 16px 24px 21px 24px;
+				font-weight: 400;
+				text-decoration: none;
+				color: #444;
+				&:hover,
+				&:focus{
+					@include nav--active;
+				}	
+			}
+			.nav-item--active{
+				@include nav--active;
+			}
+		}
+	}

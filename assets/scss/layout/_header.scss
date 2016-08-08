@@ -1,0 +1,20 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+
+.header {
+	width:	100%;
+	height: 60px;
+	border-bottom: 1px solid $body-color;
+	background-color: $body-color;
+	@include header--gradient;
+	.header__logo{
+		float: left;
+		padding: 8px;
+		margin-left: 150px;
+	}
+	.header__logo-banner{
+		position: absolute;	
+		margin-left: 800px;
+	}
+	
+}
