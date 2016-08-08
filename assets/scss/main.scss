@@ -68,7 +68,8 @@ header{
 		top: 0px;
 		ul li{
 			float: left;
-			border-right: 2px solid $body-color;
+			border-right: 1px solid $body-color;
+			border-left: 1px solid $body-color;
 			padding: 22px 0 22px 0;
 			.header__nav-links {
 				padding: 16px 24px 21px 24px;
