@@ -1,0 +1,113 @@
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box; 
+}
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}/*keep content on float element from going over eachother*/
+
+.hero{
+	position: relative;
+    width: 1366px;
+    height: 1222px;
+    margin: 0 auto;
+}
+.featured-image{
+	position: relative;
+    @include width-height--fullPercent;
+    overflow: hidden;
+    .carousel{
+		.featured-image__first{
+			position: absolute;
+			@include width-height--fullPercent;
+			left: 0;
+			background-repeat: no-repeat;
+			background-image: url(../img/wrangler-main.jpg);
+		    background-position: 41% 0%;
+		    background-size: 160%;
+		    z-index: -10;
+		}
+		h1{
+			position: absolute;
+			top: 50px;
+			left: 200px;
+			width: 412px;
+		}
+		.featured-image__subtitle{
+			position: absolute;
+			top: 150px;
+			left: 200px;
+			width: 412px;
+		}
+		.featured-image__desc{
+			position: absolute;
+			top: 200px;
+			left: 200px;
+			width: 314px;
+			color: $main-font-color;
+			line-height: 1.2em;
+			font-size: 15px;
+			padding: 10px;
+			background-color: rgba(0,0,0,0.5);
+		}
+
+	}
+}
+.squares-container{
+
+	//@include container--width;
+    margin: 480px auto;
+	.squares--xlarge{
+		position: relative;
+		width: 979px;
+		height: 140px;
+		//background-clip: content-box;
+		//margin: 10px;
+		background-color: $main-font-color;
+		border-radius: 35px 35px 0 0;
+		//border: 1px solid $main-font-color;
+		text-align: center;
+		div{
+			float: left;
+			width: 175px;
+			//display: block;
+			//width: 100%;
+			height: auto;
+			
+			p{	
+				// @include squares--font;
+		    	font-size: 20px;
+			}
+		}
+		.promo__header-img{
+			float: left;
+			margin: -113px 0 0 675px;
+		}
+		
+	}
+	.awards{
+		font-family: Arial;
+		position: relative;
+		.awards-background{
+			// margin: 16px 0px 0 0;
+			width: 979px;
+			height: auto;
+		}
+		.awards-logo{
+			position: absolute;
+			top: 10px;
+			left: 300px;
+		}
+		p{
+			position: absolute;
+			text-align: center;
+			width: 300px;
+			line-height: 1.3em;
+			top: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}

@@ -17,11 +17,11 @@
 				color: #444;
 				&:hover,
 				&:focus{
-					@include nav--active;
+					@include nav--highlight;
 				}	
 			}
-			.nav-item--active{
-				@include nav--active;
+			.nav-item--highlight{
+				@include nav--highlight;
 			}
 		}
 	}

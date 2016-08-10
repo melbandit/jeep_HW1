@@ -8,3 +8,20 @@ body{
 header{
 	font-family: 'Montserrat', sans-serif;
 }
+h1{
+	font-family: Arial, Helvetica, sans-serif;
+	color: $main-font-color;
+	font-size: 40px;
+	text-shadow: 10px 5px 5px black;
+}
+
+span{
+	padding: 0 25px;
+	font-weight: 700;
+}
+.featured-image__subtitle{
+	font-family: Arial, Helvetica, sans-serif;
+	color: $main-font-color;
+	font-size: 20px;
+	text-transform: uppercase;
+}

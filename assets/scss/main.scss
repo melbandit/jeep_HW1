@@ -1,26 +1,7 @@
 /* _________________________________________
 CONTENT:	Jeep_HW1
 AUTHOR:		Melissa I. Sattler
-____________________________________________
-
-TABLE OF CONTENTS:
-
-1. VARIABLES
-2. TYPOGRAPHY
-3. CONTENT
-
-========================================================== */
-*{
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box; 
-}
-.clearfix:after{
-	content: "";
-	display: table;
-	clear: both;
-}/*keep content on float element from going over eachother*/
-
-/* 1. VARIABLES  ========================================= */
+____________________________________________*/
 
 @import "base/reset"; //always should go first
 @import "base/typography";
@@ -32,70 +13,7 @@ TABLE OF CONTENTS:
 
 @import "layout/footer";
 @import "layout/header";
+@import "layout/hero";
 
 @import "pages/home";
 @import "pages/vehicles";
-
-/* 2. TYPOGRAPHY  ======================================== */
-
-
-/*  CONTENT  =============================================== */
-.hero{
-	position: relative;
-    width: 1366px;
-    height: 1222px;
-    margin: 0 auto;
-}
-.featured-image{
-	position: relative;
-    @include width-height--fullPercent;
-    overflow: hidden;
-	.featured-image-bkg{
-		position: absolute;
-		@include width-height--fullPercent;
-		left: 0;
-		background-image: url(../img/feature-1-bg.jpg);
-		background-repeat: no-repeat;
-		z-index: -10;
-	}
-	.featured-image-fg{
-		position: absolute;
-		@include width-height--fullPercent;
-		top: 247px;
-    	left: 60px;
-		background-image: url(../img/feature-1-vehicles.jpg);
-		background-repeat: no-repeat;
-		transform-origin: 50% 50%;
-		z-index: -5;	
-	}
-}
-.squares-container{
-	@include container--width;
-    margin: 500px auto;
-	.squares{
-		float: left;
-		background-clip: content-box;
-		margin: 10px;
-		padding: 4px;
-		background-color: $main-font-color;
-		border: 1px solid $main-font-color;
-		text-align: center;
-	}
-	.squares--large{
-		position: relative;
-		width: 430px;
-		height: 200px;
-		p{
-			@include squares--font;
-	    	font-size: 20px;
-		}
-	}
-	.squares--medium{
-		position: relative;
-		width: 310px;
-		height: 200px;
-		p{
-			@include squares--font;
-		}
-	}
-}

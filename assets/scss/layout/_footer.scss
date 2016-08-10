@@ -19,11 +19,11 @@
 			padding: 40px 0px 50px 10px;
 			line-height: 1.8em;
 			height: auto;
-			.footer__links--header{
+			h2{
 				text-transform: uppercase;
 				font-weight: 700;
 			}
-			.footer__links--disclaimers{
+			.footer__links--items{
 				display: block;
 				opacity: 0.5;	
 			}
@@ -33,6 +33,7 @@
 .footer__copyright{
 	width: 100%;
 	margin: 0 auto;
+	@include container--width;
 	p{
 		display: block;
 		line-height: 1.8em;
